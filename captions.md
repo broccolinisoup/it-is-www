@@ -124,9 +124,10 @@ They really help with finding out what modules make up the most of the bundle si
 
 What is interesting is that, more often than not you might find there are unused modules in your bundle.
 
-Here is another graph that shows the distribution of unused javascript per page. 90% of the pages load over 600 KB unused javascript per page.
+Here is another graph that shows the distribution of unused javascript. the median mobile page loads 162 KB of unused JavaScript. At the 90th percentile, 604 KB of JavaScript are unused. 
+All of these numbers represents a very large amount of unused JavaScript, especially when we consider that this analysis tracks compressed size, it is the transfer size of JavaScript resources. So that actually means that the decompressed portion of used JavaScript may be a lot larger than what the chart suggests.
 
-When contrasted with the total number of bytes loaded for mobile pages at the median, unused JavaScript accounts for 35% of all loaded scripts.
+When it is contrasted with the total number of bytes loaded for mobile pages at the median, unused JavaScript accounts for 35% of all loaded scripts.
 
 I think this is fascinating to know. 
 
